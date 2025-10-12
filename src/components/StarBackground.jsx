@@ -6,6 +6,7 @@ export const StarBackground = () => {
     const [meteors, setMeteors] = useState([]);
 
     useEffect(() => {
+
         generateStars();
         generateMeteors();
 
@@ -28,6 +29,7 @@ export const StarBackground = () => {
         const newStars = [];
 
         for (let i = 0; i < numberOfStars; i++) {
+
             newStars.push({
                 id: i,                
                 size: Math.random() * 3 + 1,
@@ -36,6 +38,7 @@ export const StarBackground = () => {
                 opacity: Math.random() * 0.5 + 0.5,
                 animationDuration: Math.random() * 4 + 2,
             });
+            
         }   
 
         setStars(newStars);
@@ -48,6 +51,7 @@ export const StarBackground = () => {
         const newMeteors = [];
 
         for (let i = 0; i < numberOfMeteors; i++) {
+
             newMeteors.push({
                 id: i,                
                 size: Math.random() * 2 + 1,
@@ -56,6 +60,7 @@ export const StarBackground = () => {
                 delay: Math.random() * 15,
                 animationDuration: Math.random() * 3 + 3,
             });
+
         }   
 
         setMeteors(newMeteors);
@@ -63,6 +68,7 @@ export const StarBackground = () => {
     }
 
     return (
+
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0" >
 
             {stars.map(star => (
