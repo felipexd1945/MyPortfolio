@@ -4,9 +4,8 @@
 
 In this repository, you'll find my personal portfolio that was building using **React**, **TailwindCSS**, **Vite**, and **Lucide Icons**. From dark mode support to responsive animations and deployable project showcases.
 
----
 
-## ⚙️ Tech Stack
+## ⚙️ Tech Stack used
 
 * **React** – Component-based UI development
 * **Vite** – Lightning-fast build tool
@@ -15,7 +14,6 @@ In this repository, you'll find my personal portfolio that was building using **
 * **Radix UI** – Accessible component primitives
 * **TypeScript (optional)** – Type safety and tooling
 
----
 
 ## ⚡️ Features
 
@@ -40,13 +38,9 @@ In this repository, you'll find my personal portfolio that was building using **
 * 📩 **Contact Section**
   Social icons + responsive contact form with toast notifications
 
----
-
 ## 🖼️ Screenshots
 
 > 📸 
-
----
 
 ## 🔗 Useful Links of tools
 
