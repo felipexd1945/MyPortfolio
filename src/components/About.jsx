@@ -1,4 +1,4 @@
-import { Code, User, Briefcase } from "lucide-react"
+import { Workflow, PencilRuler, TrendingUpDown } from "lucide-react"
 
 export const About = () => {
 
@@ -15,23 +15,32 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
           <div className="space-y-6 ">
+
+            <div>
+              <img 
+                src="/pixelArt.svg" 
+                alt="Felipe Barros" 
+                className="w-48 h-48 md:w-64 md:h-64 object-cover mx-auto"
+              />
+            </div>
   
-            <h3 className="text-2xl font-semibold">Passionate Web Developer & Tech Creator</h3>
+            <h3 className="text-2xl font-semibold">Passionate Front-End & Salesforce Developer</h3>
 
             <p className="text-muted-foreground">
-              I'm Felipe, a web developer with a passion for crafting beautiful, functional digital experiences.
-              With a background in front-end development, I specialize in building responsive, user-friendly websites and applications.
-            </p>
+              I'm Felipe, a developer focused on creating clean, responsive, and functional 
+              experiences on the web and Salesforce platform. My goal is to bridge the gap between 
+              elegant design and technical performance.
+             </p>
 
             <p className="text-muted-foreground">
-              Beyond coding, I love sharing my knowledge through tech content creation. Whether it's writing articles, making videos, 
-              or engaging on social media, I enjoy helping others navigate the ever-evolving world of technology.
+              What drives me is transforming complex business needs into smart, 
+              intuitive systems that deliver measurable impact and long-term scalability.           
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               
               <a href="#contact" className="cosmic-button"> Get In touch</a>
-              <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"> Download CV</a>
+              <a href="/CV_FELIPE_BARROS.pdf" download="FelipeBarrosCV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"> Download CV</a>
            
             </div>
 
@@ -44,15 +53,16 @@ export const About = () => {
               <div className="flex items-start gap-4">
 
                   <div className="p-3 rounded-full bg-primary/10">
-                    <Code className="h-6 w-6 text-primary" />
+                    <Workflow className="h-6 w-6 text-primary" />
                   </div>
 
                   <div className="text-left">
 
-                    <h4 className="font-semibold text-lg"> Web development</h4>
+                    <h4 className="font-semibold text-lg"> Business Process Automation </h4>
 
                     <p className="text-muted--foreogrond">
-                      Building responsive, user-friendly websites and applications using modern technologies.
+                      Automating workflows and processes in Salesforce to boost efficiency and 
+                      reduce manual effort.
                     </p>
 
                   </div>
@@ -66,15 +76,16 @@ export const About = () => {
               <div className="flex items-start gap-4">
         
                   <div className="p-3 rounded-full bg-primary/10">
-                    <User className="h-6 w-6 text-primary" />
+                    <PencilRuler className="h-6 w-6 text-primary" />
                   </div>
 
                   <div className="text-left">
         
-                    <h4 className="font-semibold text-lg"> UI/UX Design</h4>
+                    <h4 className="font-semibold text-lg"> Custom Application Development </h4>
                     
                     <p className="text-muted--foreogrond">
-                      Building responsive, user-friendly websites and applications using modern technologies.
+                      Building tailored Salesforce and web applications that transform 
+                      complex needs into seamless digital experiences.
                     </p>
         
                   </div>
@@ -85,13 +96,14 @@ export const About = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                   <div className="p-3 rounded-full bg-primary/10">
-                    <Briefcase className="h-6 w-6 text-primary" />
+                    <TrendingUpDown className="h-6 w-6 text-primary" />
                   </div>
 
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg"> Project Management</h4>
+                    <h4 className="font-semibold text-lg"> Data Integration & System Optimization </h4>
                     <p className="text-muted--foreogrond">
-                      Building responsive, user-friendly websites and applications using modern technologies.
+                      Connecting systems and optimizing Salesforce performance to 
+                      ensure smooth data flow and smarter decision-making.
                     </p>
                   </div>
 

@@ -1,27 +1,37 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const skills = [
-  { name: 'JavaScript', level: 95, category: 'Frontend' },
-    { name: 'React', level: 90, category: 'Frontend' },
-    { name: 'Vue.js', level: 85, category: 'Frontend' },
-    { name: 'HTML/CSS', level: 95, category: 'Frontend' },
-    
-    { name: 'Node.js', level: 80, category: 'Backend' },
-    { name: 'Express', level: 75, category: 'Backend' },
-    { name: 'MongoDB', level: 70, category: 'Backend' },
-    { name: 'Python', level: 85, category: 'Backend' },
-    { name: 'Django', level: 80, category: 'Backend' },
-    { name: 'SQL', level: 75, category: 'Backend' },
-   
-    { name: 'Git', level: 90, category: 'Tools' },
-    { name: 'Docker', level: 70, category: 'Tools' },
-    { name: 'Webpack', level: 65, category: 'Tools' },
-    { name: 'Jest', level: 60, category: 'Tools' },
-    { name: 'CI/CD', level: 70, category: 'Tools' },
+  { name: 'JavaScript', level: 85, category: 'Frontend' },
+  { name: 'React', level: 40, category: 'Frontend' },
+  { name: 'HTML/CSS', level: 85, category: 'Frontend' },
+  { name: 'LWC', level: 90, category: 'Frontend' },
+  { name: 'Visualforce', level: 80, category: 'Frontend' },
   
+  { name: 'Node.js', level: 65, category: 'Backend' },
+  { name: 'APEX', level: 75, category: 'Backend' },
+  { name: 'MongoDB', level: 60, category: 'Backend' },
+  { name: 'Python', level: 45, category: 'Backend' },
+  { name: 'SQL', level: 75, category: 'Backend' },
+  { name: 'SOQL', level: 85, category: 'Backend' },
+  { name: 'SOSL', level: 65, category: 'Backend' },
+  { name: 'Java', level: 65, category: 'Backend' },
+  { name: 'C#', level: 65, category: 'Backend' },
+  { name: 'ADVPL', level: 65, category: 'Backend' },
+  { name: 'TL++', level: 65, category: 'Backend' },
+
+  { name: 'Git', level: 85, category: 'Tools' },
+  { name: 'VSCode', level: 80, category: 'Tools' },
+  { name: 'Azure DevOps', level: 60, category: 'Tools' },
+  { name: 'CI/CD', level: 60, category: 'Tools' },
+  { name: 'Postman', level: 85, category: 'Tools' },
+
+  { name: 'AWS', level: 60, category: 'Cloud' },
+  { name: 'Salesforce', level: 90, category: 'Cloud' },
+  { name: 'Azure', level: 50, category: 'Cloud' }
+
 ];
 
-const categories = ['All', 'Frontend', 'Backend', 'Tools'];
+const categories = ['All', 'Frontend', 'Backend', 'Tools', 'Cloud'];
 
 export const SkillsSection = () => {
 

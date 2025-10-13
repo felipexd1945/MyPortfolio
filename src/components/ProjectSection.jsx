@@ -3,31 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Project One",
-        description: "This is a brief description of Project One.",
-        image: "https://picsum.photos/300",
-        tags: ["React", "Node.js"],
+        title: "Chat in HTML",
+        description: "This is a project for my college class, where I developed a real-time chat application using WebSockets.",
+        image: "/projects/Chat_in_HTML/chatPrint.png",
+        tags: ["HTML", "CSS", "JavaScript", "WebSockets"],
         demoUrl: "#",
-        gitHubUrl: "#"
+        gitHubUrl: "https://github.com/felipexd1945/project-from-college_APS"
     },
     {
         id: 2,
-        title: "Project Two",
-        description: "This is a brief description of Project Two.",
-        image: "https://picsum.photos/300",
-        tags: ["Vue.js", "Firebase"],
+        title: "Portfolio Website",
+        description: "This is my personal portfolio website showcasing my projects and skills.",
+        image: "/projects/PortfolioWebSite/portfolioPrint.png",
+        tags: ["React", "Html", "CSS", "Vite"],
         demoUrl: "#",
-        gitHubUrl: "#"
-    },
-    {
-        id: 3,
-        title: "Project Three",
-        description: "This is a brief description of Project Three.",
-        image: "https://picsum.photos/300",
-        tags: ["Angular", "Express"],
-        demoUrl: "#",
-        gitHubUrl: "#"
+        gitHubUrl: "https://github.com/felipexd1945/MyPortfolio"
     }
+    ,
+    // {
+    //     id: 3,
+    //     title: "Project Three",
+    //     description: "This is a brief description of Project Three.",
+    //     image: "https://picsum.photos/300",
+    //     tags: ["Angular", "Express"],
+    //     demoUrl: "#",
+    //     gitHubUrl: "#"
+    // }
 ];
 
 export const ProjectSection = () => { 
@@ -43,7 +44,7 @@ export const ProjectSection = () => {
                 </h2>
                 
                 <p className="text-center text-muted-foreground mb-12-foreground mb-12 max-w-2xl mx-auto">
-                    A selection of projects showcasing my skills and experience.
+                    A selection of some my projects to showcasing my skills and experience.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
