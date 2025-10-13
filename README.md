@@ -40,9 +40,6 @@ In this repository, you'll find my personal portfolio that was building using **
 * 📩 **Contact Section**
   Social icons + responsive contact form with toast notifications
 
-* 🚀 **One-Click Deployment**
-  Easily host your site with Vercel and GitHub
-
 ---
 
 ## 🖼️ Screenshots
