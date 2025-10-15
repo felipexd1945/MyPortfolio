@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "intro": "Hi, I'm",
+    "description": "I build innovative Salesforce and web applications that enhance user experience and operational efficiency. My focus is on creating scalable, high-quality solutions that drive real business impact.",
+    "button": "View My Work",
+    "scroll": "Scroll"
+  },
+
+  "about": {
+    "title": "About <1>Me</1>",
+    "subtitle": "Passionate Front-End & Salesforce Developer",
+    "paragraph1": "I'm Felipe, a developer focused on creating clean, responsive, and functional experiences on the web and Salesforce platform. My goal is to bridge the gap between elegant design and technical performance.",
+    "paragraph2": "What drives me is transforming complex business needs into smart, intuitive systems that deliver measurable impact and long-term scalability.",
+    "buttons": {
+      "contact": "Get In Touch",
+      "cv": "Download CV"
+    },
+    "cards": {
+      "automation": {
+        "title": "Business Process Automation",
+        "text": "Automating workflows and processes in Salesforce to boost efficiency and reduce manual effort."
+      },
+      "customDev": {
+        "title": "Custom Application Development",
+        "text": "Building tailored Salesforce and web applications that transform complex needs into seamless digital experiences."
+      },
+      "integration": {
+        "title": "Data Integration & System Optimization",
+        "text": "Connecting systems and optimizing Salesforce performance to ensure smooth data flow and smarter decision-making."
+      }
+    }
+  },
+
+  "skills": {
+    "title": "My <1>Skills</1>",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "cloud": "Cloud"
+    }
+  },
+
+  "projects": {
+    "title": "My <1>Projects</1>",
+    "description": "A selection of some of my projects showcasing my skills and experience.",
+    "githubButton": "Check My GitHub"
+  },
+
+  "contact": {
+    "title": "Get in <1>Touch</1>",
+    "intro": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!",
+    "infoTitle": "Contact Information",
+    "titleRightSection":"Send me a message",
+    "fields": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message"
+    },
+    "emailMessagePlaceHolder":"I would like to schedule a meeting!",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "social": "Connect With Me",
+    "toasts": {
+      "successTitle": "Message Sent!",
+      "successDesc": "Thank you for your message. I'll get back to you soon.",
+      "errorTitle": "Error",
+      "errorDesc": "Something went wrong. Please try again later.",
+      "networkTitle": "Network Error",
+      "networkDesc": "Could not send your message. Check your connection."
+    }
+  },
+
+  "footer": {
+    "rights": " Felipe Barros. All rights reserved"
+  }
+}

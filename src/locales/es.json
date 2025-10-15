@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+
+  "hero": {
+    "intro": "¡Hola! Soy",
+    "description": "Desarrollo aplicaciones Salesforce y web innovadoras que mejoran la experiencia del usuario y la eficiencia operativa. Me enfoco en crear soluciones escalables y de alta calidad que generen un impacto real en los negocios.",
+    "button": "Ver Mis Proyectos",
+    "scroll": "Desplazar"
+  },
+
+  "about": {
+    "title": "Sobre <1>Mí</1>",
+    "subtitle": "Desarrollador Front-End y Salesforce Apasionado",
+    "paragraph1": "Soy Felipe, un desarrollador enfocado en crear experiencias limpias, receptivas y funcionales en la web y en Salesforce. Mi objetivo es unir el diseño elegante con el rendimiento técnico.",
+    "paragraph2": "Lo que me impulsa es transformar necesidades empresariales complejas en sistemas inteligentes e intuitivos que generen impacto medible y escalabilidad a largo plazo.",
+    "buttons": {
+      "contact": "Ponerse en Contacto",
+      "cv": "Descargar CV"
+    },
+    "cards": {
+      "automation": {
+        "title": "Automatización de Procesos Empresariales",
+        "text": "Automatizando flujos de trabajo y procesos en Salesforce para aumentar la eficiencia y reducir el esfuerzo manual."
+      },
+      "customDev": {
+        "title": "Desarrollo de Aplicaciones Personalizadas",
+        "text": "Creando soluciones personalizadas de Salesforce y web que transforman necesidades complejas en experiencias digitales fluidas."
+      },
+      "integration": {
+        "title": "Integración de Datos y Optimización de Sistemas",
+        "text": "Conectando sistemas y optimizando el rendimiento de Salesforce para garantizar un flujo de datos eficiente y decisiones más inteligentes."
+      }
+    }
+  },
+
+  "skills": {
+    "title": "Mis <1>Habilidades</1>",
+    "categories": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas",
+      "cloud": "Nube"
+    }
+  },
+
+  "projects": {
+    "title": "Mis <1>Proyectos</1>",
+    "description": "Una selección de algunos proyectos que muestran mis habilidades y experiencia.",
+    "githubButton": "Ver Mi GitHub"
+  },
+
+  "contact": {
+    "title": "Ponte en <1>Contacto</1>",
+    "intro": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para colaborar. ¡No dudes en escribirme!",
+    "infoTitle": "Información de Contacto",
+    "titleRightSection": "Envíame un mensaje",
+    "fields": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo",
+      "message": "Tu Mensaje"
+    },
+    "emailMessagePlaceHolder":"¡Me gustaría agendar una reunión!",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "social": "Conéctate Conmigo",
+    "toasts": {
+      "successTitle": "¡Mensaje Enviado!",
+      "successDesc": "Gracias por tu mensaje. Te responderé pronto.",
+      "errorTitle": "Error",
+      "errorDesc": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+      "networkTitle": "Error de Red",
+      "networkDesc": "No se pudo enviar tu mensaje. Verifica tu conexión."
+    }
+  },
+
+  "footer": {
+    "rights": "Felipe Barros. Reservados todos los derechos"
+  }
+}

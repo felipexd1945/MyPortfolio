@@ -1,5 +1,6 @@
-// pages/api/sendEmail.js
-import nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -13,24 +14,19 @@ export default async function handler(req, res) {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER, // configure na Vercel
-        pass: process.env.EMAIL_PASS, // App Password
-      },
-    });
-
-    await transporter.sendMail({
-      from: `"${name}" <${email}>`,
-      to: "felipexd1945@hotmail.com", // seu e-mail real
+    const msg = {
+      to: "felipezica8@gmail.com", // seu e-mail
+      from: "felipexd1945@hotmail.com", // pode ser seu domínio ou qualquer e-mail verificado
       subject: `Mensagem do Portfólio - ${name}`,
       text: message,
-    });
+      replyTo: email,
+    };
+
+    await sgMail.send(msg);
 
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.error("Erro ao enviar e-mail:", error);
-    return res.status(500).json({ message: "Internal server error" });
+    console.error("SendGrid error:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 }

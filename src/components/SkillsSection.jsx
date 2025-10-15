@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next'
 
 const skills = [
   { name: 'JavaScript', level: 85, category: 'Frontend' },
@@ -35,8 +36,13 @@ const categories = ['All', 'Frontend', 'Backend', 'Tools', 'Cloud'];
 
 export const SkillsSection = () => {
 
+  const { i18n } = useTranslation()
+  const language = i18n.language
+
   const [activeCategory, setActiveCategory] = useState("all")
-  const filteredSkills = activeCategory === "all" ? skills : skills.filter(skill => skill.category.toLowerCase() === activeCategory.toLowerCase());
+  const filteredSkills = activeCategory === "all"
+      ? skills
+      : skills.filter(skill => skill.category.toLowerCase() === activeCategory.toLowerCase())
 
   return (
 
@@ -45,7 +51,9 @@ export const SkillsSection = () => {
         <div className="container mx-auto mx-w-5xl">
     
           <h2 className="text-3xl md:textt-4xl font-bold mb-12 text-center">
-            My <span className="text-primary"> Skills </span>
+            <Trans i18nKey="skills.title">
+              My <span className="text-primary"> Skills </span>
+            </Trans>
           </h2>
 
           <div className='flex flex-wrap justify-center gap-4 mb-12'>

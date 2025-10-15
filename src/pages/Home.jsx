@@ -7,6 +7,7 @@ import { SkillsSection } from "../components/SkillsSection"
 import { ProjectSection } from "../components/ProjectSection"
 import { ContactSection } from "../components/ContactSection"
 import { Footer } from "../components/Footer"
+import { ColorPicker } from "../components/ColorPicker";
 
 export const Home = () => {
 
@@ -14,10 +15,12 @@ export const Home = () => {
     
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
-        {/* Theme Toggle */}
+        {/* Theme Toggle and Color Picker */}
 
             <ThemeToggle />
-
+              
+            <ColorPicker />
+                
         {/* Backgorund Effects */}
 
             <StarBackground />
@@ -43,6 +46,6 @@ export const Home = () => {
     </div>
 
   )
-  
+
 }
 

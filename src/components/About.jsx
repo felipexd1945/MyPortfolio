@@ -1,6 +1,9 @@
 import { Workflow, PencilRuler, TrendingUpDown } from "lucide-react"
+import { Trans, useTranslation } from "react-i18next"
 
 export const About = () => {
+
+  const { t } = useTranslation()
 
   return (
   
@@ -9,7 +12,9 @@ export const About = () => {
       <div className="container mx-auto max-w-5xl">
   
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
+          <Trans i18nKey="about.title">
+            About <span className="text-primary">Me</span>
+          </Trans>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -24,23 +29,25 @@ export const About = () => {
               />
             </div>
   
-            <h3 className="text-2xl font-semibold">Passionate Front-End & Salesforce Developer</h3>
+            <h3 className="text-2xl font-semibold">{t("about.subtitle")}</h3>
 
             <p className="text-muted-foreground">
-              I'm Felipe, a developer focused on creating clean, responsive, and functional 
-              experiences on the web and Salesforce platform. My goal is to bridge the gap between 
-              elegant design and technical performance.
+              {t("about.paragraph1")}
              </p>
 
             <p className="text-muted-foreground">
-              What drives me is transforming complex business needs into smart, 
-              intuitive systems that deliver measurable impact and long-term scalability.           
+              {t("about.paragraph2")}         
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               
-              <a href="#contact" className="cosmic-button"> Get In touch</a>
-              <a href="/CV_FELIPE_BARROS.pdf" download="FelipeBarrosCV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"> Download CV</a>
+              <a href="#contact" className="cosmic-button"> 
+                {t("about.buttons.contact")} 
+              </a>
+              <a href="/CV_FELIPE_BARROS.pdf" download="FelipeBarrosCV.pdf" className="px-6 py-2 rounded-full border border-primary 
+              text-primary hover:bg-primary/10 transition-colors duration-300"> 
+                {t("about.buttons.cv")} 
+              </a>
            
             </div>
 
@@ -58,11 +65,10 @@ export const About = () => {
 
                   <div className="text-left">
 
-                    <h4 className="font-semibold text-lg"> Business Process Automation </h4>
+                    <h4 className="font-semibold text-lg"> {t("about.cards.automation.title")} </h4>
 
                     <p className="text-muted--foreogrond">
-                      Automating workflows and processes in Salesforce to boost efficiency and 
-                      reduce manual effort.
+                      {t("about.cards.automation.text")}
                     </p>
 
                   </div>
@@ -81,11 +87,10 @@ export const About = () => {
 
                   <div className="text-left">
         
-                    <h4 className="font-semibold text-lg"> Custom Application Development </h4>
+                    <h4 className="font-semibold text-lg"> {t("about.cards.customDev.title")} </h4>
                     
                     <p className="text-muted--foreogrond">
-                      Building tailored Salesforce and web applications that transform 
-                      complex needs into seamless digital experiences.
+                      {t("about.cards.customDev.text")}
                     </p>
         
                   </div>
@@ -100,10 +105,9 @@ export const About = () => {
                   </div>
 
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg"> Data Integration & System Optimization </h4>
+                    <h4 className="font-semibold text-lg"> {t("about.cards.integration.title")} </h4>
                     <p className="text-muted--foreogrond">
-                      Connecting systems and optimizing Salesforce performance to 
-                      ensure smooth data flow and smarter decision-making.
+                      {t("about.cards.integration.text")}
                     </p>
                   </div>
 
