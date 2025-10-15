@@ -12,7 +12,7 @@ In this repository, you'll find my personal portfolio that was building using **
 * **TailwindCSS** – Utility-first CSS for styling
 * **Lucide Icons** – Clean and beautiful icon pack
 * **Radix UI** – Accessible component primitives
-* * **i18next ** – Support multilanguage
+* **React-i18next** – Support multilanguage
 
 
 ## ⚡️ Features
